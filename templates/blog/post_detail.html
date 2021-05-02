@@ -1,0 +1,12 @@
+<h1>{{ post.title }}</h1>
+
+<p>
+    {{post.content}}
+</p>
+
+<small>{{ post.updated_at }}</small><br>
+
+<form>
+    <a href="{% url 'post_edit' post_id %}"><input type="button" value="수정"></a>
+    <a href="{% url 'post_list' %}"><input type="button" value="목록"></a>
+</form>
